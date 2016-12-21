@@ -4,7 +4,7 @@
 <h2>Project7 - FEND</h2>
 <strong>By: Kazim Reza</strong>
 
-<h2>Project Link: https://cdn.rawgit.com/kazimreza/Project7/master/index.html </h2>
+<h2>Project Link: https://cdn.rawgit.com/kazimreza/UdacityMapProject/master/index.html </h2>
 
 <h2>Basic Description</h2>
 <p>This project is using Google Maps API to display the <strong>St. Louis, MO</strong></p>
