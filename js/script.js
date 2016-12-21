@@ -6,7 +6,6 @@ function toggleBounce() {
         }
     }
 
-var contentString;
 
 function initMap() {
     
@@ -29,21 +28,21 @@ function initMap() {
     for (r = 0; r < attractions.length; r++) {
         var myPosition = new google.maps.LatLng(attractions[r].lat, attractions[r].lng);
     
-     jQuery(document).ready(function(weather) {
+    /*    jQuery(document).ready(function(weather) {
     weather.ajax({
         url: "http://api.wunderground.com/api/af4314f2ce84f68b/geolookup/conditions/q/"+attractions[r].lat+","+attractions[r].lng+".json",
         dataType: "jsonp",
         success: function(parsed_json) {
-            attractions.temp = parsed_json['current_observation']['temp_f'];
-            console.log(attractions.temp);
+            temp = parsed_json['current_observation']['temp_f'];
             
-   attractions[r].info = '<div id="info_content">' +
-    '<h3>' + attractions[r].name + '</h3>' + "Weather: " + attractions.temp +
+            
+   var contentString = '<div id="info_content">' +
+    '<h3>' + attractions[r].name + '</h3>' + "Weather: " + temp +
     '<br><a class="web-links" href="' + attractions[r].webUrl + '" target="_blank">' + "Website: " + '</a>' +
     '</div>';
            
-            console.log(attractions[r].info);
-           
+            
+            //var location = parsed_json['location']['city'];
            // attractions.temp = parsed_json['current_observation']['temp_f']; alert("WU Test");
            //window.temp = temp; 
             }, 
@@ -52,14 +51,13 @@ function initMap() {
         } 
         
     }); 
-}); 
+}); */
        
       
-        var contentString = attractions[r].info;
-        /*'<div id="info_content">' +
+        var contentString = '<div id="info_content">' +
             '<h3>' + attractions[r].name + '</h3>' + "Weather: " +  attractions[r].flckrPhoto + 
             '<br><a class="web-links" href="' + attractions[r].webUrl + '" target="_blank">' + "Website: " + '</a>' +
-            '</div>'; */
+            '</div>';
         var infoWindow = new google.maps.InfoWindow ({
             content: contentString
         });
@@ -79,7 +77,7 @@ function initMap() {
         
       
     }
-  
+   alert("hello2");
 }
 
 // initMap();
