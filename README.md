@@ -8,7 +8,11 @@ By Kazim Reza
 <a href="https://review.udacity.com/#!/rubrics/17/view" target="_blank">Project Specifications</a>
 <p><strong>By: Kazim Reza</strong></p>
 
+<<<<<<< HEAD
 <a href="https://cdn.rawgit.com/kazimreza/Project7-NeighborhoodMap/master/index.html" target="_blank"><h2>Project Link:  </h2>
+=======
+<h2>Project Link: https://cdn.rawgit.com/kazimreza/UdacityMapProject/master/index.html </h2>
+>>>>>>> origin/master
 
 <h2>Basic Description</h2></a>
 <ul>
@@ -36,6 +40,7 @@ By Kazim Reza
 <li>http://www.programmableweb.com/news/how-to-tap-weather-underground%E2%80%99s-plethora-data-api/how-to/2015/09/10</li>
 <li>https://www.wunderground.com/weather/api/d/docs</li>
 <li>https://www.wunderground.com/weather/api/d/docs?d=resources/code-samples</li>
+<<<<<<< HEAD
 <li>http://opensoul.org/2011/06/23/live-search-with-knockoutjs/</li>
 <li>Reviewed several code examples on GitHub</li>
 </ul>
@@ -44,3 +49,7 @@ By Kazim Reza
 
 
 
+=======
+<li></li>
+</ul>
+>>>>>>> origin/master
