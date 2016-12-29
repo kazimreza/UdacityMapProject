@@ -7,18 +7,27 @@ var streetViewUrl = 'https://maps.googleapis.com/maps/api/streetview?size=320x12
 function determineImage() {
 	streetViewImage = streetViewUrl + destinations[i].lat + ',' + destinations[i].lng + '&fov=120&heading=6&pitch=10';
 }
-var temp;
+
+var tempF;
+var tempC;
 destinations.forEach(function(attraction) {
 	jQuery(document).ready(function(weather) {
 		weather.ajax({
 			url: "http://api.wunderground.com/api/32d1c1fe378a9163/geolookup/conditions/q/" + attraction.lat + "," + attraction.lng + ".json",
 			dataType: "jsonp",
 			success: function(parsed_json) {
-				attraction.temp = parsed_json['current_observation']['temp_f'];
+				attraction.tempF = parsed_json['current_observation']['temp_f'];
+                attraction.tempC = parsed_json['current_observation']['temp_c'];
+                
 			},
+            
 			error: function(textStatus, errorThrown) {
 				alert('Temperature API failed to load.');
+				
 			}
+            
 		});
+        // console.log (tempC);
+        // console.log (tempF);
 	})
 })

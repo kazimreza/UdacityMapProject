@@ -1,5 +1,6 @@
 //List of diferent Destinations around St. Louis
-// Only using 10 locations in app due Weather undergraound query restrictions
+// Only using 5 locations in app due to Weather undergraound query restrictions (10 querries per minute)
+
 var destinations = [{
 		name: "St. Louis Art Museum",
 		webUrl: "http://www.slam.org/",

@@ -1,6 +1,6 @@
 var map;
-var markerssArray = [];
-
+var markersArray = [];
+/*
 function mySTLMap() {
 	var myMap = document.createElement('script');
 	myMap.type = 'text/javascript';
@@ -24,9 +24,32 @@ function initMap() {
 		}
 	};
 	map = new google.maps.Map(document.getElementById('StLMap'), mapOptions);
-	setMarkers(destinations);
+    setMarkers(destinations);
+
+}*/
+
+function initMap() {
+    var bounds = new google.maps.LatLngBounds();
+    var mapOptions = {
+		center: {
+			lat: 38.620627,
+			lng: -90.257623
+		},
+		zoom: 13,
+		maxZoom: 14,
+		minZoom: 12,
+		zoomControlOptions: {
+			position: google.maps.ControlPosition.TOP_RIGHT,
+			style: google.maps.ZoomControlStyle.SMALL
+		}
+	};
+    
+    map = new google.maps.Map(document.getElementById('StLMap'), mapOptions);
+    setMarkers(destinations);
 }
+
 //  *** Seting Markers and Creating infoWindows 
+
 function setMarkers(location) {
 	for (i = 0; i < location.length; i++) {
 		location[i].holdMarker = new google.maps.Marker({
@@ -39,7 +62,7 @@ function setMarkers(location) {
 		// *** Place street view images within infoWindow
 		determineImage();
 		// *** InfoWindow content 
-		location[i].contentString = '<img class="image" src="' + streetViewImage + '" alt="Street View Image of ' + location[i].name + '"><br><hr style="margin-bottom: 6px"><h2>' + location[i].name + '</h2><p class="weather">' + "Weather: " + location[i].temp + '\u2109</p>' + '<a class="webLink" href="' + location[i].webUrl + '" target="_blank">' + "Website" + '</a><br><a class="direction" href="http://maps.google.com/?q=' + location[i].lat + "," + location[i].lng + '"target="_blank">' + "Directions" + '</a><br><a class="wiki" href="https://en.wikipedia.org/wiki/' + location[i].name + '"target="_blank">' + "Wikepedia" + '</a>';
+		location[i].contentString = '<img class="image" src="' + streetViewImage + '" alt="Street View Image of ' + location[i].name + '"><br><hr style="margin-bottom: 6px"><h2>' + location[i].name + '</h2><p class="weather">' + "Weather: " + location[i].tempF + '\u2109</p>' + "Weather: " + location[i].tempC + '\u2103</p>' + '<a class="webLink" href="' + location[i].webUrl + '" target="_blank">' + "Website" + '</a><br><a class="direction" href="http://maps.google.com/?q=' + location[i].lat + "," + location[i].lng + '"target="_blank">' + "Directions" + '</a><br><a class="wiki" href="https://en.wikipedia.org/wiki/' + location[i].name + '"target="_blank">' + "Wikepedia" + '</a>';
 		var infowindow = new google.maps.InfoWindow({
 			content: destinations[i].contentString
 		});
@@ -77,13 +100,15 @@ function setMarkers(location) {
 		})(location[i].holdMarker, i));
 	}
 }
-this.listToggle = function() {
+
+
+/*this.listToggle = function() {
     if(self.toggleSymbol() === 'hide') {
       self.toggleSymbol('show');
     } else {
       self.toggleSymbol('hide');
     }
-  };
+  };*/
 
 function setAllMap() {
 	for (var r = 0; r < destinations.length; r++) {

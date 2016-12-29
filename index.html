@@ -8,8 +8,10 @@
 	<title>Welcome to St. Louis</title>
 	<!--link href="css/designs.css" rel="stylesheet">
 	<!--link href="css/bootstrap.min.css" rel="stylesheet"-->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<style>
     html,body,#StLMap{width:100%;height:100%;z-index:1;position:absolute;margin:0}h1{font-size:6em;text-align:center}#input{margin:15px 0 5px 20px;width:86%;height:35px;font-size:17px;font-family:helvetica,sans-serif;color:#9D9D9D;border:none;-webkit-box-shadow:6px 6px 5px #00000f;outline:none}#search-container{margin-top:0;margin-left:10px;background-color:#eee;position:absolute;z-index:3}#search-nav{width:296px;max-height:549px;font-size:1.2em;background-color:;border:solid 2px #00f;overflow:hidden}#scroller{max-height:480px;overflow:scroll;margin:10 5px}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}h1{margin:.67em 0;font-size:2em}input{margin:0;font:inherit;color:inherit}input::-moz-focus-inner{padding:0;border:0}input{line-height:normal}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input{font-family:inherit;font-size:inherit;line-height:inherit}h1{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}h1{margin-top:20px;margin-bottom:10px}h1{font-size:36px}ul{margin-top:0;margin-bottom:10px}@-ms-viewport{width:device-width}@media (max-width:767px){.hidden-xs{display:none!important}}
+    @media only screen and (max-width: 500px){#search-container{margin-top: 400px;}}
     </style>
 </head>
 <body>
@@ -19,11 +21,11 @@
 		<div id="search-nav">
 		 <div>
 		 
-            <span class="toggler" data-bind="text: toggleSymbol, click: menuToggle()"></span>
+            <span class="toggler" data-bind="text: toggleSymbol, click: menuToggle"></span>
 			<input autocomplete="off" data-bind="textInput: query, valueUpdate: 'keydown'" id="input" placeholder="Search St. Louis" type="input">
 			<div id="scroller">
 				<br>
-				<ul data-bind="template: {name: 'marker', foreach:destinations}, visible: toggleSymbol() === 'hide'"></ul>
+				<ul data-bind="template: {name: 'marker', foreach:destinations}, visible: toggleSymbol() === 'Hide Menu'"></ul>
 				<script id="marker" type="text/html">
                     <div data-bind="visible: visible">
                         <a href="#" data-bind="attr: {id: id}">
@@ -37,7 +39,27 @@
 			</div>
 			</div>
 		</div>
-	
+	<!--script>
+        var map;
+        function initMap() {
+	var mapOptions = {
+		center: {
+			lat: 38.620627,
+			lng: -90.257623
+		},
+		zoom: 13,
+		maxZoom: 14,
+		minZoom: 12,
+		zoomControlOptions: {
+			position: google.maps.ControlPosition.TOP_RIGHT,
+			style: google.maps.ZoomControlStyle.SMALL
+		}
+	};
+	map = new google.maps.Map(document.getElementById('StLMap'), mapOptions);
+	setMarkers(destinations);
+}
+    </script-->
+    
 	<script src="js/jquery-3.1.1.min.js" type="text/javascript">
 	</script> 
 	<script src="js/knockout3.4.1.js" type="text/javascript">
@@ -50,5 +72,6 @@
 	</script> 
 	<script src="js/koModel.js" type="text/javascript">
 	</script>
+	<script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB8OVhyfSHQ8SayTU9nBkC6OKHbFx8aTog&callback=initMap" onerror="googleError();"></script>
 </body>
 </html>
