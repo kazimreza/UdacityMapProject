@@ -10,14 +10,17 @@ function determineImage() {
 
 var tempF;
 var tempC;
-destinations.forEach(function(attraction) {
+destinations.forEach(function(location) {
 	jQuery(document).ready(function(weather) {
 		weather.ajax({
-			url: "http://api.wunderground.com/api/32d1c1fe378a9163/geolookup/conditions/q/" + attraction.lat + "," + attraction.lng + ".json",
+			url: "http://api.wunderground.com/api/32d1c1fe378a9163/geolookup/conditions/q/" + location.lat + "," + location.lng + ".json",
 			dataType: "jsonp",
 			success: function(parsed_json) {
-				attraction.tempF = parsed_json['current_observation']['temp_f'];
-                attraction.tempC = parsed_json['current_observation']['temp_c'];
+				location.tempF = parsed_json['current_observation']['temp_f'];
+                location.tempC = parsed_json['current_observation']['temp_c'];
+                console.log (location.lat);
+                console.log(parsed_json['current_observation']['temp_f']);
+                console.log (location.tempF);
                 
 			},
             
@@ -28,6 +31,6 @@ destinations.forEach(function(attraction) {
             
 		});
         // console.log (tempC);
-        // console.log (tempF);
+        console.log (location.tempF);
 	})
 })

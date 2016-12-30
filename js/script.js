@@ -27,6 +27,7 @@ function initMap() {
     setMarkers(destinations);
 
 }*/
+console.log (location[2].tempF);
 
 function initMap() {
     var bounds = new google.maps.LatLngBounds();
