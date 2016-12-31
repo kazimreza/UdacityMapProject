@@ -4,6 +4,8 @@ var viewModel = {
 };
 viewModel.destinations = ko.dependentObservable(function() {
 	var self = this;
+    self.tempC = ko.observableArray('');
+    self.tempF = ko.observableArray('');
 	self.toggleSymbol = ko.observable('Hide Menu');
 	var search = self.query().toLowerCase();
 	return ko.utils.arrayFilter(destinations, function(marker) {

@@ -1,3 +1,5 @@
+
+
 var map;
 var markersArray = [];
 /*
@@ -27,7 +29,7 @@ function initMap() {
     setMarkers(destinations);
 
 }*/
-console.log (location[2].tempF);
+console.log (tempF);
 
 function initMap() {
     var bounds = new google.maps.LatLngBounds();
@@ -63,7 +65,7 @@ function setMarkers(location) {
 		// *** Place street view images within infoWindow
 		determineImage();
 		// *** InfoWindow content 
-		location[i].contentString = '<img class="image" src="' + streetViewImage + '" alt="Street View Image of ' + location[i].name + '"><br><hr style="margin-bottom: 6px"><h2>' + location[i].name + '</h2><p class="weather">' + "Weather: " + location[i].tempF + '\u2109</p>' + "Weather: " + location[i].tempC + '\u2103</p>' + '<a class="webLink" href="' + location[i].webUrl + '" target="_blank">' + "Website" + '</a><br><a class="direction" href="http://maps.google.com/?q=' + location[i].lat + "," + location[i].lng + '"target="_blank">' + "Directions" + '</a><br><a class="wiki" href="https://en.wikipedia.org/wiki/' + location[i].name + '"target="_blank">' + "Wikepedia" + '</a>';
+		location[i].contentString = '<img class="image" src="' + streetViewImage + '" alt="Street View Image of ' + location[i].name + '"><br><hr style="margin-bottom: 6px"><h2>' + location[i].name + '</h2><p class="weather">' + "Weather: " + tempF[i] + '\u2109</p>' + "Weather: " + tempC[i] + '\u2103</p>' + '<a class="webLink" href="' + location[i].webUrl + '" target="_blank">' + "Website" + '</a><br><a class="direction" href="http://maps.google.com/?q=' + location[i].lat + "," + location[i].lng + '"target="_blank">' + "Directions" + '</a><br><a class="wiki" href="https://en.wikipedia.org/wiki/' + location[i].name + '"target="_blank">' + "Wikepedia" + '</a>';
 		var infowindow = new google.maps.InfoWindow({
 			content: destinations[i].contentString
 		});
