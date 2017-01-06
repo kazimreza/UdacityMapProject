@@ -15,9 +15,9 @@ By Kazim Reza
     <li>Run 'index.html' in a browser</li>
 </ul>
 
-<a href="https://cdn.rawgit.com/kazimreza/Project7-NeighborhoodMap/master/index.html" target="_blank"><h5><strong>Live Project Demo</strong></h5></a>
+<a href="https://cdn.rawgit.com/kazimreza/UdacityMapProject/master/index.html" target="_blank"><h5><strong>Live Project Demo</strong></h5></a>
 
-<h2>Project Link: https://cdn.rawgit.com/kazimreza/Project7-NeighborhoodMap/master/index.html </h2>
+<h2>Project Link: https://cdn.rawgit.com/kazimreza/UdacityMapProject/master/index.html </h2>
 
 
 <h2>Basic Description</h2>
