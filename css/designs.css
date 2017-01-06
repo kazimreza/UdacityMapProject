@@ -1,150 +1,94 @@
-html,
-body,
-#StLMap {
-  width: 100%;
+html, body, #map {
+    height: 100%;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    width: 100%;
   height: 100%;
   z-index: 1;
   position: absolute;
   margin: 0;
 }
 
-h1 {
-  /*position: fixed; 
-    z-index: -1;*/
-  font-size: 6em;
-  text-align: center;
-}
-#label1 {
-  z-index: 6;
-  margin-left: 30px;
-}
-
-#input {
-  margin: 15px 0 5px 20px;
-  width: 86%;
-  height: 35px;
-  font-size: 17px;
-  font-family: helvetica, sans-serif;
-  color: #9D9D9D;
-  border: none;
-  -webkit-box-shadow: 6px 6px 5px #00000f;
-  outline: none;
-}
-
-#search-container {
-  margin-top: 500;
-  margin-left: 10px;
-  background-color: #eee;
-  position: absolute;
-  z-index: 3;
-}
-
-#search-nav {
-  width: 296px;
-  max-height: 549px;
-  font-size: 1.2em;
-  background-color: ;
-  border: solid 2px #0000ff;
-  overflow: hidden;
-}
-
-#scroller {
-  max-height: 480px;
-  overflow: scroll;
-  margin: 10 5px;
-}
-
-html {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-}
-
-h1 {
-  margin: .67em 0;
-  font-size: 2em;
-}
-
-input {
-  margin: 0;
-  font: inherit;
-  color: inherit;
-}
-
-input::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-input {
-  line-height: normal;
+.stLouis {
+    text-align: center;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
-:after,
-:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 10px;
-}
-
-body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
-}
-
-input {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-
-h1 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-}
-
-h1 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-h1 {
-  font-size: 36px;
-}
-
 ul {
-  margin-top: 0;
-  margin-bottom: 10px;
+    list-style: none;
 }
 
-@-ms-viewport {
-  width: device-width;
+p {
+    text-decoration: underline;
+   
+}
+.listBox, .searchBox, .searchList {
+     border-style: solid;
+    border-width: .3em;
+    border-color: black;
+}
+.listBox {
+    max-width: 30%;
+    font-size: 16px;
+    position: fixed;
+    z-index: 99;
+    top: 4.26em;
+    right: 1%;
+    color: #0000ff;
+    text-decoration: none;
+    
 }
 
-@media (max-width:767px) {
-  .hidden-xs {
-    display: none!important;
-  }
+.searchBox {
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    background-color: #f0f0f0;
+    box-shadow: 1px 1px 5px #0c0c0c;
+    margin-bottom: 0.3em;
+    vertical-align: middle;
 }
+
+.searchList {
+    background-color: #f0f0f0;
+    opacity: 0.7;
+}
+
+
+#search {
+    width: 100%;
+    border: none;
+    line-height: 2em;
+    font-size: 16px;
+}
+
+
+.list-item {
+    padding-left: 3px;
+    padding-right: 3px;
+    cursor: pointer;
+}
+
+.list-item:hover {
+    background-color: #e0e0e0;
+}
+
+.destinationName {
+    font-size: 18px;
+}
+
+.toggleArrows {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.google-error {
+    text-align: center;
+    margin-top: 100px;
+}
+
 .weather {
 	color: #0000ff;
 	font-size: 1.4em;
@@ -159,7 +103,6 @@ ul {
 }
 .webLink, .wiki, .direction {
 	font-size: 1.2em;
-	text-shadow: 1px 1px #999999;
 	text-decoration: underline;
 	text-align: right;
 }
@@ -168,3 +111,21 @@ ul {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@media screen and (max-width: 700px) {
+  
+    .stLouis {
+        font-size: 2em;
+        color: #0000ff;
+    }
+    .listBox {
+        color: #770077;
+        
+    }
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+

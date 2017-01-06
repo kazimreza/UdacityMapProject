@@ -8,13 +8,19 @@ By Kazim Reza
 <a href="https://review.udacity.com/#!/rubrics/17/view" target="_blank">Project Specifications</a>
 <p><strong>By: Kazim Reza</strong></p>
 
-<<<<<<< HEAD
-<a href="https://cdn.rawgit.com/kazimreza/Project7-NeighborhoodMap/master/index.html" target="_blank"><h2>Project Link:  </h2>
-=======
-<h2>Project Link: https://cdn.rawgit.com/kazimreza/UdacityMapProject/master/index.html </h2>
->>>>>>> origin/master
+<h5>To view the Project</h5>
+<ul>
+    <li>Clone or download the project from <a href = "https://github.com" target = "_blank"> GitHub </a></li>
+    <li>Open the project</li>
+    <li>Run 'index.html' in a browser</li>
+</ul>
 
-<h2>Basic Description</h2></a>
+<a href="https://cdn.rawgit.com/kazimreza/Project7-NeighborhoodMap/master/index.html" target="_blank"><h5><strong>Live Project Demo</strong></h5></a>
+
+<h2>Project Link: https://cdn.rawgit.com/kazimreza/Project7-NeighborhoodMap/master/index.html </h2>
+
+
+<h2>Basic Description</h2>
 <ul>
 <li>This project is using Google Maps API to display the <strong>St. Louis, MO</strong></li>
 <li>Map shows multiple attractions in St. Louis, MO</li>
@@ -27,11 +33,12 @@ By Kazim Reza
 <br/>
 <br/>
 
-<h2>Resources:</h2><br/>
+<h2>Resources:</h2>
 <ul>
 <li>http://api.jquery.com/</li>
 <li>http://www.w3schools.com/</li>
 <li>https://developers.google.com/maps/documentation/javascript/tutorial</li>
+<li>https://developers.google.com/maps/documentation/javascript/examples/maptype-styled-simple</li>
 <li>https://tommcfarlin.com/multiple-infowindows-google-maps/</li>
 <li>https://mapicons.mapsmarker.com/</li>
 <li>https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple</li>
@@ -40,7 +47,7 @@ By Kazim Reza
 <li>http://www.programmableweb.com/news/how-to-tap-weather-underground%E2%80%99s-plethora-data-api/how-to/2015/09/10</li>
 <li>https://www.wunderground.com/weather/api/d/docs</li>
 <li>https://www.wunderground.com/weather/api/d/docs?d=resources/code-samples</li>
-<<<<<<< HEAD
+
 <li>http://opensoul.org/2011/06/23/live-search-with-knockoutjs/</li>
 <li>Reviewed several code examples on GitHub</li>
 </ul>
@@ -49,7 +56,7 @@ By Kazim Reza
 
 
 
-=======
+
 <li></li>
 </ul>
->>>>>>> origin/master
+
