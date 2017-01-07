@@ -10,14 +10,12 @@ By Kazim Reza
 
 <h5>To view the Project</h5>
 <ul>
-    <li>Clone or download the project from <a href = "https://github.com" target = "_blank"> GitHub </a></li>
+    <li>Clone or download the project from <a href = "https://github.com/kazimreza/UdacityMapProject" target = "_blank"> GitHub </a></li>
     <li>Open the project</li>
     <li>Run 'index.html' in a browser</li>
 </ul>
 
 <a href="https://cdn.rawgit.com/kazimreza/Project7-NeighborhoodMap/master/index.html" target="_blank"><h5><strong>Live Project Demo</strong></h5></a>
-
-<h2>Project Link: https://cdn.rawgit.com/kazimreza/Project7-NeighborhoodMap/master/index.html </h2>
 
 
 <h2>Basic Description</h2>

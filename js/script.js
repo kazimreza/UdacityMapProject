@@ -229,7 +229,7 @@ function populateInfoWindow(marker, infoWindow) {
        var r = marker.id;
          
 
-        infoWindow.setContent('<img src="' + streetView[r] + '" alt="Street View Image of "><h3>'+ marker.name+'</h3><p class="weather">' + "Weather: " + tempF[r] + '\u2109' + "  or  " + tempC[r] + '\u2103' + "    " + '<img src = "img/wu.png"</p> <br>' + '<a class="webLink" href="' + destinations[r].webUrl + '" target="_blank">' + "Website" + '</a><br><a class="direction" href="http://maps.google.com/?q=' + destinations[r].latLang.lat + "," + destinations[r].latLang.lng + '"target="_blank">' + "Directions" + '</a><br><a class="wiki" href="https://en.wikipedia.org/wiki/' + marker.name + '"target="_blank">' + "Wikepedia" + '</a>');
+        infoWindow.setContent('<img src="' + streetView[r] + '" alt="Street View Image of "><h2>'+ marker.name+'</h2><p class="weather">' + "Weather: " + tempF[r] + '\u2109' + "  or  " + tempC[r] + '\u2103' + "    " + '<img src = "img/wu.png"</p> <br>' + '<a class="webLink" href="' + destinations[r].webUrl + '" target="_blank">' + "Website" + '</a><br><a class="direction" href="http://maps.google.com/?q=' + destinations[r].latLang.lat + "," + destinations[r].latLang.lng + '"target="_blank">' + "Directions" + '</a><br><a class="wiki" href="https://en.wikipedia.org/wiki/' + marker.name + '"target="_blank">' + "Wikepedia" + '</a>');
 
        
         infoWindow.open(map, marker);
