@@ -10,12 +10,14 @@ By Kazim Reza
 
 <h5>To view the Project</h5>
 <ul>
-    <li>Clone or download the project from <a href = "https://github.com/kazimreza/UdacityMapProject" target = "_blank"> GitHub </a></li>
+    <li>Clone or download the project from <a href ="https://github.com/kazimreza/UdacityMapProject" target ="_blank"> GitHub </a></li>
     <li>Open the project</li>
     <li>Run 'index.html' in a browser</li>
 </ul>
 
-<a href="https://cdn.rawgit.com/kazimreza/Project7-NeighborhoodMap/master/index.html" target="_blank"><h5><strong>Live Project Demo</strong></h5></a>
+<a href="https://cdn.rawgit.com/kazimreza/UdacityMapProject/master/index.html" target="_blank"><h3><strong>Live Project Demo</strong></h3></a>
+
+
 
 
 <h2>Basic Description</h2>
@@ -28,9 +30,6 @@ By Kazim Reza
 <li>Destination information from Wikipedia</li>
 <li>Option to view destination website</li>
 </ul>
-<br/>
-<br/>
-
 <h2>Resources:</h2>
 <ul>
 <li>http://api.jquery.com/</li>
@@ -48,13 +47,6 @@ By Kazim Reza
 
 <li>http://opensoul.org/2011/06/23/live-search-with-knockoutjs/</li>
 <li>Reviewed several code examples on GitHub</li>
-</ul>
-
-
-
-
-
-
-<li></li>
+<li>https://www.barbarianmeetscoding.com/blog/2014/02/05/barbarian-meets-knockout-knockout-dot-js-observable-arrays/</li>
 </ul>
 
