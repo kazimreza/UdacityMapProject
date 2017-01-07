@@ -1,52 +1,52 @@
 //List of diferent Destinations around St. Louis
 // Only using 5 locations in app due to Weather undergraound query restrictions (10 querries per minute)
-
 var destinations = [{
 		name: "St. Louis Art Museum",
 		webUrl: "http://www.slam.org/",
 		symbol: "img/artMuseumIcon.png",
 		latLang: {
-            lat: 38.639361,
-            lng: -90.294338
-        },
+			lat: 38.639361,
+			lng: -90.294338
+		},
 		id: "0"
 	}, {
 		name: "Grand Center, St. Louis",
 		webUrl: "http://www.grandcenter.org/",
 		symbol: "img/theater.png",
 		latLang: {
-            lat: 38.644824,
-            lng: -90.232283
-        },
+			lat: 38.644824,
+			lng: -90.232283
+		},
 		id: "1"
 	}, {
 		name: "Gateway Arch",
 		webUrl: "http://www.gatewayarch.com/",
 		symbol: "img/arch.jpeg",
 		latLang: {
-            lat: 38.624773,
-            lng: -90.184937
-        },
+			lat: 38.624773,
+			lng: -90.184937
+		},
 		id: "2"
 	}, {
 		name: "Ted Drewes",
 		webUrl: "http://teddrewes.com/",
 		symbol: "img/icecreamIcon.png",
 		latLang: {
-            lat: 38.589386,
-            lng: -90.307603
-        },
+			lat: 38.589386,
+			lng: -90.307603
+		},
 		id: "3"
 	}, {
 		name: "St. Louis Zoo",
 		webUrl: "https://www.stlzoo.org/",
 		symbol: "img/zooIcon.png",
 		latLang: {
-            lat: 38.633806,
-            lng: -90.291326
-        },
+			lat: 38.633806,
+			lng: -90.291326
+		},
 		id: "4"
-	} /*, {
+	}
+	/*, {
 		name: "Missouri History Museum",
 		webUrl: "http://www.mohistory.org/",
 		symbol: "img/artMuseumIcon.png",
