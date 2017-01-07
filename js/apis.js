@@ -11,15 +11,29 @@ destinations.forEach(function(location) {
 	jQuery(document).ready(function(weather) {
 		weather.ajax({
 			url: "http://api.wunderground.com/api/32d1c1fe378a9163/geolookup/conditions/q/" + location.latLang.lat + ',' + location.latLang.lng + ".json",
-			dataType: "jsonp",
-			success: function(parsed_json) {
+			dataType: "jsonp"})
+            .done (function(parsed_json) { tempF.push(parsed_json['current_observation']['temp_f']);
+					tempC.push(parsed_json['current_observation']['temp_c']);
+				})
+            .fail (function(error) {
+            alert("Unable to Get Weather reading for " + location.name);
+        })
+        .always (function() {
+            console.log("Weather Reading Complete");
+        });
+        });
+    
+})
+            
+			/*success: function(parsed_json) {
 				if (parsed_json['current_observation']['temp_f'] == NaN) {
 					alert("Unable to Get Weather reading for " + location.name);
 				} else {
 					tempF.push(parsed_json['current_observation']['temp_f']);
 					tempC.push(parsed_json['current_observation']['temp_c']);
-				}
-			}
+				})
+			
 		});
 	})
-})
+    
+    */
